@@ -1,6 +1,6 @@
 context('Register form tests', () => {
 	beforeEach(() => {
-		cy.visitEngMe24();
+		cy.visitMeestGroupSiteEngVersion();
 		cy.contains('Register').click()
 	})
 
@@ -14,6 +14,7 @@ context('Register form tests', () => {
 		cy.get('.input-div input[type=text]').type(userEmail)
 		cy.get('[placeholder="password"]').type(password)
 		cy.get('[placeholder="password (again)"]').type(password)
+
 		cy.get('input[type="checkbox"]')
 			.check({ force: true })
 			.should('be.checked')

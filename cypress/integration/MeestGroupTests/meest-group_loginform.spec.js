@@ -5,7 +5,7 @@ context('Login form tests', () => {
 
 	it('Success login', () => {
 		//Arrange
-		const email = 'formeestgrouptest@gmail.com'
+		const email = 'formeestgrouptest+1002@gmail.com'
 		const pass = 'A1234567'
 
 		//Act
